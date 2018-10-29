@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MathMethods.Controllers.OneChtCon">
+   <children>
+      <LineChart fx:id="ch1" layoutX="-3.0" layoutY="-4.0" prefHeight="578.0" prefWidth="739.0">
+         <xAxis>
+            <NumberAxis fx:id="axxCh1" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="axyCh1" side="LEFT" />
+         </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

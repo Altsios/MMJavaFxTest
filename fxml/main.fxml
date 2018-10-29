@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Accordion stylesheets="@../Styles/MyStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MathMethods.Controllers.Controller">
+  <panes>
+      <TitledPane animated="false" layoutX="10.0" layoutY="39.0" prefHeight="216.0" prefWidth="280.0" stylesheets="@../Styles/MyStyle.css" text="Расширенный анализ функции">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="259.0" prefWidth="292.0">
+                     <children>
+                        <AnchorPane prefHeight="46.0" prefWidth="292.0">
+                           <children>
+                              <Label layoutY="1.0" text="Выбор из списка">
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="292.0">
+                           <children>
+                              <ListView fx:id="lst" prefHeight="224.0" prefWidth="283.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="292.0">
+                           <children>
+                              <Button fx:id="nxtbtn1" layoutX="60.0" layoutY="4.0" mnemonicParsing="false" onAction="#nextBtnPressedFst" prefHeight="29.0" prefWidth="161.0" text="Далее" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TitledPane>
+    <TitledPane animated="false" prefHeight="216.0" prefWidth="280.0" stylesheets="@../Styles/MyStyle.css" text="Анализ нескольких функций">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="259.0" prefWidth="292.0">
+                     <children>
+                        <AnchorPane prefHeight="46.0" prefWidth="292.0">
+                           <children>
+                              <Label layoutY="1.0" text="Выбор из списка">
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="292.0">
+                           <children>
+                              <ListView fx:id="mylst" prefHeight="224.0" prefWidth="283.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="292.0">
+                           <children>
+                              <Button fx:id="nxtbtn" layoutX="60.0" layoutY="4.0" mnemonicParsing="false" onAction="#nextBtnPressed" prefHeight="29.0" prefWidth="161.0" text="Далее" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font size="15.0" />
+         </font>
+    </TitledPane>
+  </panes>
+</Accordion>

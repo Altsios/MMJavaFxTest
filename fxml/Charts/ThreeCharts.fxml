@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox stylesheets="@../../Styles/MyStyle.css" fx:controller="MathMethods.Controllers.Charts.ThrChtsCon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <LineChart fx:id="ch1">
+        <xAxis>
+          <NumberAxis fx:id="axxCh1" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="axyCh1" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="ch2">
+        <xAxis>
+          <NumberAxis fx:id="axxCh2" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="axyCh2" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="ch3">
+        <xAxis>
+          <NumberAxis fx:id="axxCh3" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="axyCh3" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</VBox>
